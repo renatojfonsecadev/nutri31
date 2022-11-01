@@ -21,119 +21,33 @@
                                         Name
                                     </th>
                                     <th>
-                                        Country
+                                        País
                                     </th>
                                     <th>
-                                        City
+                                        Cidade
                                     </th>
                                     <th>
-                                        Salary
+                                        Salário
                                     </th>
                                 </thead>
                                 <tbody>
-                                  <tr>
-                                      <td>
-                                          1
-                                      </td>
-                                      <td>
-                                          Paciente Primeiro
-                                      </td>
-                                      <td>
-                                          Brasil
-                                      </td>
-                                      <td>
-                                          São Vicente
-                                      </td>
-                                      <td class="text-primary">
-                                          r$96,738
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          2
-                                      </td>
-                                      <td>
-                                        Paciente Segundo
-                                      </td>
-                                      <td>
-                                          Japão
-                                      </td>
-                                      <td>
-                                          Tokyo
-                                      </td>
-                                      <td class="text-primary">
-                                          r$93,789
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          3
-                                      </td>
-                                      <td>
-                                          John Enderson
-                                      </td>
-                                      <td>
-                                          Nova Zelândia
-                                      </td>
-                                      <td>
-                                          Baileux
-                                      </td>
-                                      <td class="text-primary">
-                                          r$86,142
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          4
-                                      </td>
-                                      <td>
-                                        Paciente Quarto
-                                      </td>
-                                      <td>
-                                          Korea
-                                      </td>
-                                      <td>
-                                          Overland Park
-                                      </td>
-                                      <td class="text-primary">
-                                          r$108.735
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          5
-                                      </td>
-                                      <td>
-                                          John Jobs
-                                      </td>
-                                      <td>
-                                          Malawi
-                                      </td>
-                                      <td>
-                                          Feldkirchen
-                                      </td>
-                                      <td class="text-primary">
-                                          $83,542
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                      <td>
-                                          6
-                                      </td>
-                                      <td>
-                                          Ju Porter
-                                      </td>
-                                      <td>
-                                          Chile
-                                      </td>
-                                      <td>
-                                          Santiago
-                                      </td>
-                                      <td class="text-primary">
-                                          r$98.615
-                                      </td>
-                                  </tr>
-                              </tbody>
+                                    <tr *ngFor="let paciente of Paciente">
+                                    <td>{{ paciente.id }}</td>
+                                    <td>{{ paciente.name }}</td>
+                                    <td>{{ paciente.country }}</td>
+                                    <td>{{ paciente.city }}</td>
+                                    <td>{{ paciente.salary }}</td>
+                                    <td>
+                                        <span class="edit" routerLink="/paciente-edit/{{ paciente.id }}"
+                                        >Edit</span>
+                                        <span class="delete" (click)="deletePaci(paciente.id)"
+                                        >Delete</span
+                                        >
+                                    </td>
+                                    </tr>
+                                </tbody>
+
+
                             </table>
                         </div>
                     </div>

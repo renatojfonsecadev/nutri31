@@ -12,6 +12,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'user-profile',   component: UserProfileComponent },
     { path: 'table-list',     component: TableListComponent },
     { path: 'paci-list',     component: PacienteListComponent },
-    { path: 'login',     component: PacienteListComponent },
     { path: 'cardapio',     component: CardapioComponent },
+    { path: 'alimentos',     component: CardapioComponent },
 ];

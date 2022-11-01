@@ -1,0 +1,122 @@
+{
+  "pacientes": [
+    {
+      "id": 1,
+      "name": "Tony Stark Fonseca",
+      "email": "tony@mcu.com",
+      "country": "Brasil",
+      "city": "São Vicente",
+      "salary": "96738",
+      "phone": "001-222-4568"
+    },
+    {
+      "id": 2,
+      "name": "Black Widow",
+      "email": "black-widow@mcu.com",
+      "country": "Japão",
+      "city": "Tokyi",
+      "salary": "93789",
+      "phone": "001-123-4568"
+    },
+    {
+      "id": 4,
+      "name": "Spider Pac",
+      "email": "spider@pac.com",
+      "country": "Nova Zelância",
+      "city": "Baileux",
+      "salary": "86142",
+      "phone": "4322-3456"
+    },
+    {
+      "id": 3,
+      "name": "John Enderson",
+      "email": "enderson@startreck.com",
+      "country": "Korea",
+      "city": "Overland Park",
+      "salary": "86142",
+      "phone": "543-3123"
+    },
+    {
+      "name": "home-aranha",
+      "email": "spider55@marvel.com",
+      "country": "Chile",
+      "city": "Santiago",
+      "salary": "108735",
+      "phone": "8765-2567",
+      "id": 5
+    }
+  ],
+  "cargos": [
+    {
+      "id": 1,
+      "nome": "presidente"
+    },
+    {
+      "id": 2,
+      "nome": "desenvolvedor"
+    }
+  ],  "nutricionistas": [
+    {
+      "id": 1,
+      "nome": "presidente"
+    },
+    {
+      "id": 2,
+      "nome": "desenvolvedor"
+    }
+  ],
+  "cidades": [
+    {
+      "id": 1,
+      "sigla": "SV",
+      "descr": "São Vicente"
+    },
+    {
+      "id": 2,
+      "sigla": "SO",
+      "descr": "Santos"
+    },
+    {
+      "id": 2,
+      "sigla": "SP",
+      "descr": "São Paulo"
+    }
+  ],
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "Renato Fonseca",
+      "email": "Renato@gmail.com",
+      "cidade": "SV",
+      "login": "renato",
+      "senha": "renatosv"
+    },
+    {
+      "id": 2,
+      "nome": "Fonseca Jose",
+      "email": "fonseca@gmail.com",
+      "cidade": "SP",
+      "login": "fonseca",
+      "senha": "fonseca2022"
+    },
+    {
+      "id": 3,
+      "nome": "Jose da Silva",
+      "email": "ze@gmail.com",
+      "cidade": "SP",
+      "login": "silva",
+      "senha": "ze2022"
+    },
+    {
+      "id": 5,
+      "nome": "Maria Jose",
+      "email": "maria@gmail.com",
+      "cidade": "SO",
+      "login": "maria",
+      "senha": "mariasv"
+    },
+    {
+      "id": 6
+    }
+  ]
+}

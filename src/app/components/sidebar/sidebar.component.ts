@@ -9,11 +9,12 @@ declare interface RouteInfo {
 }
 export const ROUTES: RouteInfo[] = [
     { path: '/dashboard', title: 'Dashboard',  icon: 'dashboard', class: '' },
-    { path: '/user-profile', title: 'Perfil Usuário',  icon:'person', class: '' },
+    { path: '/user-profile', title: 'Perfil Nutric',  icon:'person', class: '' },
     { path: '/table-list', title: 'Nutricionistas',  icon:'content_paste', class: '' },
     { path: '/paci-list', title: 'Pacientes',  icon:'content_paste', class: '' },
     { path: '/login', title: 'Sair',  icon:'logout', class: '' },
     { path: '/cardapio', title: 'Cardapio',  icon:'square', class: '' },
+    { path: '/alimentos', title: 'Alimentos',  icon:'square', class: '' },
 ];
 
 @Component({
