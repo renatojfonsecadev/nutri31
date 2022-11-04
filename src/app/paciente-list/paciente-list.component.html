@@ -1,0 +1,57 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+  
+            </div>
+            <div class="col-md-12">
+                <div class="card card-plain">
+                    <div class="card-header card-header-info">
+                        <h4 class="card-title mt-0"> Tabela com bakcground</h4>
+                        <p class="card-category"> Lista dos Pacientes</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="">
+                                    <th>
+                                        ID
+                                    </th>
+                                    <th>
+                                        Name
+                                    </th>
+                                    <th>
+                                        País
+                                    </th>
+                                    <th>
+                                        Cidade
+                                    </th>
+                                    <th>
+                                        Salário
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let paciente of Paciente">
+                                    <td>{{ paciente.id }}</td>
+                                    <td>{{ paciente.name }}</td>
+                                    <td>{{ paciente.country }}</td>
+                                    <td>{{ paciente.city }}</td>
+                                    <td>{{ paciente.salary }}</td>
+                                    <td>
+                                        <span class="edit" routerLink="/paciente-edit/{{ paciente.id }}"
+                                        >Edit </span>
+                                        <span class="delete" (click)="deletePaci(paciente.id)"
+                                        > Delete</span
+                                        >
+                                    </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
