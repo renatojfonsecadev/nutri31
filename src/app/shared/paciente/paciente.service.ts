@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Paciente } from '../shared/paciente';
+import { Paciente } from './paciente';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 @Injectable({
@@ -11,7 +11,7 @@ export class RestApiService {
   apiURL = 'http://localhost:3000';
   constructor(private http: HttpClient) {}
   /*========================================
-    CRUD Methods for consuming RESTful API
+    CRUD Methods para consumir RESTful API - Paciente
   =========================================*/
   // Http Options
   httpOptions = {
@@ -19,19 +19,19 @@ export class RestApiService {
       'Content-Type': 'application/json',
     }),
   };
-  // HttpClient API get() method => Fetch pacientes list
+  // HttpClient API get() method => recupera lista de  pacientes
   getPacientes(): Observable<Paciente> {
     return this.http
       .get<Paciente>(this.apiURL + '/pacientes')
       .pipe(retry(1), catchError(this.handleError));
   }
-  // HttpClient API get() method => Fetch employee
+  // HttpClient API get() method => Fetch Paciente
   getPaci(id: any): Observable<Paciente> {
     return this.http
       .get<Paciente>(this.apiURL + '/pacientes/' + id)
       .pipe(retry(1), catchError(this.handleError));
   }
-  // HttpClient API post() method => Create employee
+  // HttpClient API post() method => Create Paciente
   createPaci(employee: any): Observable<Paciente> {
     return this.http
       .post<Paciente>(
@@ -41,7 +41,7 @@ export class RestApiService {
       )
       .pipe(retry(1), catchError(this.handleError));
   }
-  // HttpClient API put() method => Update employee
+  // HttpClient API put() method => Update Paciente
   updatePaci(id: any, employee: any): Observable<Paciente> {
     return this.http
       .put<Paciente>(
@@ -51,7 +51,7 @@ export class RestApiService {
       )
       .pipe(retry(1), catchError(this.handleError));
   }
-  // HttpClient API delete() method => Delete employee
+  // HttpClient API delete() method => Delete Paciente
   deletePaci(id: any) {
     return this.http
       .delete<Paciente>(this.apiURL + '/pacientes/' + id, this.httpOptions)

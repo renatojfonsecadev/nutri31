@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RestApiService } from '../shared/rest-api.service';
+import { RestApiService } from '../shared/paciente/paciente.service';
 
 @Component({
   selector: 'app-paciente-list',
@@ -20,7 +20,7 @@ export class PacienteListComponent implements OnInit {
     });
   }
   // Delete Paciente
-  deleteEmployee(id: any) {
+  deletePaciente(id: any) {
     if (window.confirm('Tem certeza que deseja Excluir este Paciente?')) {
       this.restApi.deletePaci(id).subscribe((data) => {
         this.loadPaci();

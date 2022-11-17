@@ -1,19 +1,169 @@
 <div class="container custom-container">
-  <div class="col-md-12">
+    <br /><br /><br />
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header card-header-info">
+                <h4 class="card-title">Cadastro do Paciente</h4>
+            </div>
+            <div class="card-body"></div>
+        </div>
+        <div class="form-group">
+            <input
+                type="text"
+                [(ngModel)]="pacienteData.name"
+                class="form-control"
+                placeholder="Name"
+            />
+        </div>
+        <div class="form-group">
+            <input
+                type="text"
+                [(ngModel)]="pacienteData.email"
+                class="form-control"
+                placeholder="Email"
+            />
+        </div>
+        
+        <div class="form-group">
+            <input
+                type="text"
+                [(ngModel)]="pacienteData.phone"
+                class="form-control"
+                placeholder="Phone"
+            />
+        </div>
 
-    <h3 class="mb-3 text-center">Altera dados do Paciente</h3>
-    <div class="form-group">
-      <input type="text" [(ngModel)]="pacienteData.name" class="form-control" placeholder="Name">
-    </div>
-    <div class="form-group">
-      <input type="text" [(ngModel)]="pacienteData.email" class="form-control" placeholder="Email">
-    </div>
-    <div class="form-group">
-      <input type="text" [(ngModel)]="pacienteData.phone" class="form-control" placeholder="Phone">
-    </div>
-    <div class="form-group">
-      <button class="btn btn-success btn-lg btn-block" (click)="updateEmployee()">Atualizar</button>
+    <div class="row">
+
+        <div class="form-group">
+            <input
+                type="number"
+                [(ngModel)]="pacienteData.peso"
+                class="form-control"
+                placeholder="Peso"
+            />
+        </div>
+
+        <div class="form-group">
+            <input
+                type="number"
+                [(ngModel)]="pacienteData.altura"
+                class="form-control"
+                placeholder="Altura"
+            />
+        </div>
+        <div class="form-group">
+            <button
+                class="btn btn-success btn-lg btn-block"
+                [disabled]="!pacienteData.peso"
+                (click)="calculaIMC()"
+                >
+                Calcular IMC
+            </button>
+        </div>
+
     </div>
 
-  </div>
+    <div class="form-group">
+        <input
+            type="text"
+            [(ngModel)]="pacienteData.imc"
+            class="form-control"
+            placeholder="IMC"
+            />
+    </div>
+
+
+        <div class="row">
+            <div class="form-group">
+                <input
+                    type="text"
+                    [(ngModel)]="pacienteData.cep"
+                    class="form-control"
+                    placeholder="CEP"
+                />
+            </div>
+            <div class="form-group">
+                <button
+                    class="btn btn-success btn-lg btn-block"
+                    [disabled]="!pacienteData.cep"
+                    (click)="consomeCep()"
+                >
+                    Consulta CEP
+                </button>
+            </div>
+        </div>
+        <div class="form-group">
+            <input
+                type="text"
+                [(ngModel)]="pacienteData.logradouro"
+                class="form-control"
+                placeholder="Rua/Av"
+            />
+        </div>
+        <div class="form-group">
+            <input
+                type="text"
+                [(ngModel)]="pacienteData.complemento"
+                class="form-control"
+                placeholder="Número / apto / Complemento"
+            />
+        </div>
+        <div class="form-group">
+            <input
+                type="text"
+                [(ngModel)]="pacienteData.bairro"
+                class="form-control"
+                placeholder="Bairro"
+            />
+        </div>
+        <div class="form-group">
+            <input
+                type="text"
+                [(ngModel)]="pacienteData.localidade"
+                class="form-control"
+                placeholder="Cidade"
+            />
+        </div>
+        <div class="form-group">
+            <input
+                type="text"
+                [(ngModel)]="pacienteData.uf"
+                class="form-control"
+                placeholder="Estado"
+            />
+        </div>
+        <div class="form-group">
+            <input
+                type="text"
+                [(ngModel)]="pacienteData.dtNasc"
+                class="form-control"
+                placeholder="Data de Nascimento"
+            />
+        </div>
+        <div class="form-group">
+            <input
+                type="text"
+                [(ngModel)]="pacienteData.dataAtual"
+                class="form-control"
+                placeholder="Data Atual"
+            />
+        </div>
+        <div class="form-group">
+            <input
+                type="text"
+                [(ngModel)]="pacienteData.idade"
+                class="form-control"
+                placeholder="idade Calculada"
+            />
+        </div>
+        <div class="form-group">
+            <button
+                class="btn btn-success btn-lg btn-block"
+                (click)="updatePaciente()"
+            >
+                Atualizar
+            </button>
+        </div>
+    </div>
 </div>

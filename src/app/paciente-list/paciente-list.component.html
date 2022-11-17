@@ -7,8 +7,8 @@
             <div class="col-md-12">
                 <div class="card card-plain">
                     <div class="card-header card-header-info">
-                        <h4 class="card-title mt-0"> Tabela com bakcground</h4>
-                        <p class="card-category"> Lista dos Pacientes</p>
+                        <h4 class="card-title mt-0"> Pacientes Ativos</h4>
+                        <p class="card-category"> Lista dos Pacientes Ativos de Emagrecimento</p>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -21,22 +21,18 @@
                                         Name
                                     </th>
                                     <th>
-                                        País
+                                        e-mail
                                     </th>
                                     <th>
-                                        Cidade
-                                    </th>
-                                    <th>
-                                        Salário
+                                        Localidade
                                     </th>
                                 </thead>
                                 <tbody>
                                     <tr *ngFor="let paciente of Paciente">
                                     <td>{{ paciente.id }}</td>
                                     <td>{{ paciente.name }}</td>
-                                    <td>{{ paciente.country }}</td>
-                                    <td>{{ paciente.city }}</td>
-                                    <td>{{ paciente.salary }}</td>
+                                    <td>{{ paciente.email }}</td>
+                                    <td>{{ paciente.localidade }}</td>
                                     <td>
                                         <span class="edit" routerLink="/paciente-edit/{{ paciente.id }}"
                                         >Edit </span>

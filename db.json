@@ -1,31 +1,50 @@
 {
   "pacientes": [
     {
-      "id": 1,
-      "name": "Tony Stark Fonseca",
+      "name": "Tony Stark F",
       "email": "tony@mcu.com",
-      "country": "Brasil",
-      "city": "São Vicente",
-      "salary": "96738",
-      "phone": "001-222-4568"
+      "cep": "11330150",
+      "logradouro": "Rua Tiradentes",
+      "complemento": "4",
+      "bairro": "Parque Bitaru",
+      "localidade": "São Vicente",
+      "uf": "SP",
+      "phone": "(11) 99552-2233",
+      "id": 1,
+      "peso": 90,
+      "altura": 1.9
     },
     {
       "id": 2,
       "name": "Black Widow",
       "email": "black-widow@mcu.com",
       "country": "Japão",
-      "city": "Tokyi",
       "salary": "93789",
-      "phone": "001-123-4568"
+      "phone": "001-123-4568",
+      "cep": "04543907",
+      "logradouro": "Avenida Presidente Juscelino Kubitschek",
+      "complemento": "1909",
+      "bairro": "Vila Nova Conceição",
+      "localidade": "São Paulo",
+      "peso": 0,
+      "altura": 0,
+      "uf": "SP"
     },
     {
       "id": 4,
       "name": "Spider Pac",
       "email": "spider@pac.com",
       "country": "Nova Zelância",
-      "city": "Baileux",
       "salary": "86142",
-      "phone": "4322-3456"
+      "phone": "4322-3456",
+      "cep": "11330000",
+      "logradouro": "Rua Spider",
+      "complemento": " 555",
+      "bairro": "Bairro Spider",
+      "localidade": "New Spider",
+      "peso": 0,
+      "altura": 0,
+      "uf": "SP"
     },
     {
       "id": 3,
@@ -34,16 +53,31 @@
       "country": "Korea",
       "city": "Overland Park",
       "salary": "86142",
-      "phone": "543-3123"
+      "phone": "543-3123",
+      "cep": "11035070",
+      "logradouro": "Rua Enguaguaçu",
+      "complemento": "20",
+      "bairro": "Ponta da Praia",
+      "localidade": "Santos",
+      "peso": 0,
+      "altura": 0,
+      "uf": "SP"
     },
     {
       "name": "home-aranha",
       "email": "spider55@marvel.com",
       "country": "Chile",
-      "city": "Santiago",
       "salary": "108735",
       "phone": "8765-2567",
-      "id": 5
+      "id": 5,
+      "cep": "11330000",
+      "logradouro": "Rua Chile",
+      "complemento": " 555",
+      "bairro": "Bairro Chile",
+      "localidade": "New Chile",
+      "peso": 0,
+      "altura": 0,
+      "uf": "SP"
     }
   ],
   "cargos": [
